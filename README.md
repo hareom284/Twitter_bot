@@ -12,7 +12,7 @@ Go to this [link](https://developer.twitter.com/en/portal/projects-and-apps) and
 
 And then You need to generate those put it on fourth step
 
-![See the image][2.png]
+![Image](2.png)
 
 ## Third step install twit in your computer like below
 
