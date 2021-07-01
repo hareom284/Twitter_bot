@@ -18,15 +18,21 @@ function retweet() {
         if (data && data.statuses.length > 0) {
             let tweet = data.statuses[0];
             
-            console.log(tweet);
-            //retweet 
+            // console.log(tweet);
+            //retweet the tweet
 
             T.post('statuses/retweet/:id', { id: tweet.id_str }, function (err, data, response) {
-                console.log(data);
+                // console.log(data);
 
                 console.log("Retweet successful");
                 });
+             //like the tweet 
+            T.post('favorites/create', { id: tweet.id_str })
 
+              .then(result => {
+                 console.log('Liked tweet successfully!');
+               }).catch(console.error);
+           
             }
         else {
             console.log('No tweet on the Hastage', searchHastage.q);
@@ -36,4 +42,4 @@ function retweet() {
     //function recall
     retweet();
      // to set time interval for retweet new after every 1000s
-    setInterval(retweet,1000 *1000)
+    setInterval(retweet,300 *1000)
