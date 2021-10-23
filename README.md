@@ -1,9 +1,4 @@
-# How to run this app
-
-
-
-
-# To create twitter bot your own way
+# To creat your own bot read this docs
 
 ## First You need a twitter developer account
 
@@ -19,34 +14,35 @@ And then You need to generate those put it on fourth step
 
 ![Image](2.png)
 
-## Third step install twit in your computer like below
+### Create .env file
 
-```
-       npm install twit --save
-
-```
-
-## Third step
-
-You need to create folder which can be any name and on this folder you will need to creat a two subfiles
-
-- The first file you can name config.js
-
-```
-  //Config Object
-let config = {
-   //this key you can get from developer
-   consumer_key: "",
-   consumer_secret: "",
-   access_token: "",
-   access_token_secret: ""
-};
-//Export the Config to access from the main bot app.
-module.exports = config;
+<p> copy  keys from developer account that shown in above on image and paste it each </p>
 
 ```
 
-- The second file you can name index.js
+consumer_key=your_keys
+consumer_secret=your_cosumeer_securet
+access_token=your_access_token
+access_token_secret=your_access_token_secret
+
+
+```
+
+## Install packages
+
+```
+       npm install
+
+```
+
+# Run locally
+
+```
+  npm run twitter_dev
+
+```
+
+# Code Explaination
 
 ```
 
@@ -91,4 +87,5 @@ function retweet() {
    setInterval(retweet,1000 *1000)
 
 ```
+
 <small>Follow me on twitter👉👉<a href="https://twitter.com/hareom284">@hareom284</a></small>
