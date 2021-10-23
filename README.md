@@ -1,4 +1,9 @@
-# To create twitter using twit and node.js
+# How to run this app
+
+
+
+
+# To create twitter bot your own way
 
 ## First You need a twitter developer account
 
